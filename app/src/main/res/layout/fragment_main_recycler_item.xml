@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemContainer">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mainFragmentRecyclerItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16.dp"
+        android:textSize="20.sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.dp"
+        android:layout_marginEnd="@dimen/recycler_item_line_margin_end"
+        android:background="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainFragmentRecyclerItemTextView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
